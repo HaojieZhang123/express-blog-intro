@@ -17,7 +17,7 @@ const blog = [
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
         image: '',
-        tags: [tag1]
+        tags: [tag2]
     },
     {
 
