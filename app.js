@@ -10,31 +10,31 @@ const blog = [
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
-        image: 'images/1.png',
+        image: 'images/ciambellone.jpeg',
         tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
-        image: 'images/2.png',
+        image: 'images/cracker_barbabietola.jpeg',
         tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
-        image: 'images/3.png',
+        image: 'images/pane_fritto_DOLCE.jpeg',
         tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
-        image: 'images/4.png',
+        image: 'images/pasta_barbabietola.jpeg',
         tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
-        image: 'images/5.png',
+        image: 'images/torta_paesana.jpeg',
         tags: ['tag1', 'tag2', 'tag3']
     }
 ];
@@ -44,10 +44,10 @@ app.use(express.static('public'));
 
 // base root
 app.get('/', (req, res) => {
-    res.send('<img src="images/1.png" alt="Immagine di esempio">');
+    res.send('Server del mio blog');
 });
 
-// route for images '/bacheca'
+// route for '/bacheca'
 app.get('/bacheca', (req, res) => {
     res.json(blog);
 });
