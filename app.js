@@ -1,16 +1,39 @@
-// importo expressJS
+// import expressJS
 const express = require('express');
-// assegno funzione alla variabile app
+// assignment of function to variable app
 const app = express();
-// inizializzo numero di porta
+// initialize port number
 const port = 3000;
 
-// rotta base
+// array for blog
+const blog = [
+    {
+        title: 'titolo',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
+        image: '',
+        tags: [tag1]
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    },
+    {
+
+    }
+];
+
+
+// base root
 app.get('/', (req, res) => {
     res.send('Server del mio blog');
 });
 
-// apro porta e lascio server in ascolto per eventuali richieste
+// leave server to listen to any request coming into the specified port
 app.listen(port, () => {
     console.log(`Server in ascolto alla porta ${port}`);
 });
