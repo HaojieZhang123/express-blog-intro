@@ -20,7 +20,10 @@ const blog = [
         tags: [tag2]
     },
     {
-
+        title: 'titolo',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
+        image: 'adb',
+        tags: [tag3]
     },
     {
 
