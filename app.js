@@ -11,34 +11,36 @@ const blog = [
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
         image: '',
-        tags: [tag1]
+        tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
         image: 'adb',
-        tags: [tag2]
+        tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
         image: 'adb',
-        tags: [tag3]
+        tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
         image: 'adb',
-        tags: [tag3]
+        tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
         image: 'adb',
-        tags: [tag3]
+        tags: ['tag1', 'tag2', 'tag3']
     }
 ];
 
+// static asset folder
+app.use(express.static('public'));
 
 // base root
 app.get('/', (req, res) => {
