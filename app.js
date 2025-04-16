@@ -10,31 +10,31 @@ const blog = [
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
-        image: 'public/img/1.jpg',
+        image: 'images/1.png',
         tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
-        image: 'public/img/2.jpg',
+        image: 'images/2.png',
         tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
-        image: 'public/img/3.jpg',
+        image: 'images/3.png',
         tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
-        image: 'public/img/4.jpg',
+        image: 'images/4.png',
         tags: ['tag1', 'tag2', 'tag3']
     },
     {
         title: 'titolo',
         content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.',
-        image: 'public/img/5.jpg',
+        image: 'images/5.png',
         tags: ['tag1', 'tag2', 'tag3']
     }
 ];
@@ -44,7 +44,7 @@ app.use(express.static('public'));
 
 // base root
 app.get('/', (req, res) => {
-    res.send('Server del mio blog');
+    res.send('<img src="images/1.png" alt="Immagine di esempio">');
 });
 
 // route for images '/bacheca'
